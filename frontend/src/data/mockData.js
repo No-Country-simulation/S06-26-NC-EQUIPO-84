@@ -1,0 +1,198 @@
+export const mockJobs = [
+  {
+    id: 1,
+    title: 'Frontend Developer',
+    company: 'Mercado Libre',
+    location: 'Remoto · LATAM',
+    logo: 'https://i.pravatar.cc/64?img=1',
+    match: 70,
+    salary: '$1,800 - $2,400 USD',
+    missing: ['React avanzado', 'TypeScript', 'Testing con Jest'],
+    have: ['HTML/CSS', 'JavaScript', 'Git', 'Responsive Design'],
+  },
+  {
+    id: 2,
+    title: 'UI Developer',
+    company: 'Rappi',
+    location: 'Bogotá · Híbrido',
+    logo: 'https://i.pravatar.cc/64?img=2',
+    match: 85,
+    salary: '$2,100 - $2,800 USD',
+    missing: ['Figma avanzado', 'Animaciones CSS'],
+    have: ['React', 'Tailwind', 'JavaScript', 'Git', 'Accesibilidad'],
+  },
+  {
+    id: 3,
+    title: 'React Developer Jr',
+    company: 'Globant',
+    location: 'Remoto · Global',
+    logo: 'https://i.pravatar.cc/64?img=3',
+    match: 55,
+    salary: '$1,400 - $1,900 USD',
+    missing: ['Redux', 'Node.js', 'REST APIs', 'Git avanzado'],
+    have: ['HTML/CSS', 'JavaScript básico'],
+  },
+  {
+    id: 4,
+    title: 'Junior Web Developer',
+    company: 'NTT Data',
+    location: 'Medellín · Presencial',
+    logo: 'https://i.pravatar.cc/64?img=4',
+    match: 62,
+    salary: '$1,200 - $1,600 USD',
+    missing: ['SQL', 'APIs REST', 'Metodologías ágiles'],
+    have: ['HTML/CSS', 'JavaScript', 'React básico'],
+  },
+]
+
+export const mockCourses = [
+  {
+    id: 1,
+    title: 'React desde cero',
+    provider: 'Alura',
+    free: true,
+    duration: '40h',
+    level: 'Principiante',
+    tag: 'Frontend',
+    progress: 0,
+  },
+  {
+    id: 2,
+    title: 'TypeScript para React',
+    provider: 'Oracle ONE',
+    free: true,
+    duration: '20h',
+    level: 'Intermedio',
+    tag: 'Frontend',
+    progress: 0,
+  },
+  {
+    id: 3,
+    title: 'Google Cloud Fundamentals',
+    provider: 'Google GEAR',
+    free: true,
+    duration: '30h',
+    level: 'Principiante',
+    tag: 'Cloud',
+    progress: 35,
+  },
+  {
+    id: 4,
+    title: 'Testing con Jest y RTL',
+    provider: 'Udemy',
+    free: false,
+    duration: '15h',
+    level: 'Intermedio',
+    tag: 'Testing',
+    progress: 0,
+  },
+  {
+    id: 5,
+    title: 'Git y GitHub avanzado',
+    provider: 'Alura',
+    free: true,
+    duration: '8h',
+    level: 'Intermedio',
+    tag: 'Herramientas',
+    progress: 100,
+  },
+]
+
+export const mockMentors = [
+  {
+    id: 1,
+    name: 'Carlos Méndez',
+    role: 'Senior Frontend @ Globant',
+    avatar: 'https://i.pravatar.cc/120?img=11',
+    tags: ['React', 'TypeScript', 'Carrera'],
+    available: true,
+    bio: 'Empecé como autodidacta en un pueblo sin universidad de tecnología. Hoy lidero un equipo de 8 personas.',
+  },
+  {
+    id: 2,
+    name: 'Ana Torres',
+    role: 'Tech Lead @ Rappi',
+    avatar: 'https://i.pravatar.cc/120?img=21',
+    tags: ['Liderazgo', 'Frontend', 'Mentoría'],
+    available: true,
+    bio: 'Madre soltera, programadora de noche durante 3 años hasta conseguir mi primer empleo tech.',
+  },
+  {
+    id: 3,
+    name: 'Luis Herrera',
+    role: 'CEO @ StartupCo',
+    avatar: 'https://i.pravatar.cc/120?img=31',
+    tags: ['Emprendimiento', 'Cloud', 'Networking'],
+    available: false,
+    bio: 'De vender minutos de celular a fundar una startup valuada en 2M. El camino no es lineal.',
+  },
+  {
+    id: 4,
+    name: 'Camila Restrepo',
+    role: 'Product Designer @ Nubank',
+    avatar: 'https://i.pravatar.cc/120?img=25',
+    tags: ['Diseño', 'UX', 'Portafolio'],
+    available: true,
+    bio: 'Ayudo a personas sin título universitario a construir portafolios que sí abren puertas.',
+  },
+]
+
+export const mockStories = [
+  {
+    id: 1,
+    name: 'Daniela Ruiz',
+    role: 'Frontend Developer @ Globant',
+    image: 'https://i.pravatar.cc/400?img=47',
+    quote: 'Hace un año no sabía qué era un componente. Hoy programo en producción.',
+    tag: 'De cero a empleo',
+  },
+  {
+    id: 2,
+    name: 'Andrés Pino',
+    role: 'Backend Developer @ Rappi',
+    image: 'https://i.pravatar.cc/400?img=52',
+    quote: 'El mentor que encontré aquí me abrió la puerta que ningún CV pudo abrir.',
+    tag: 'Networking real',
+  },
+  {
+    id: 3,
+    name: 'Valentina Cruz',
+    role: 'UX Designer @ Nubank',
+    image: 'https://i.pravatar.cc/400?img=44',
+    quote: 'Aprendí a creer que sí pertenezco a este mundo. Eso cambió todo.',
+    tag: 'Salud mental',
+  },
+]
+
+export const emotionActions = {
+  happy: {
+    message: 'Qué bueno que estás bien. Aprovechá esta energía.',
+    action: 'Revisá una vacante nueva hoy — estás en el momento ideal para dar el paso.',
+  },
+  tired: {
+    message: 'El cansancio también es parte del camino.',
+    action: "Escuchá un episodio corto de 'How I Built This' mientras descansás.",
+  },
+  sad: {
+    message: 'Está bien no estar bien. No estás solo en esto.',
+    action: "Date 20 minutos hoy para ver algo que te inspire, sin culpa.",
+  },
+  anxious: {
+    message: 'La ansiedad avisa que esto te importa. Respirá.',
+    action: 'Salí a caminar 10 minutos. Sin teléfono. Solo vos y el aire.',
+  },
+  overwhelmed: {
+    message: 'Demasiado a la vez no es sostenible.',
+    action: 'Hacé una sola cosa hoy. Solo una. Eso ya es avanzar.',
+  },
+}
+
+export const weeklyCheckIns = [
+  { day: 'Lun', mood: 4 },
+  { day: 'Mar', mood: 3 },
+  { day: 'Mié', mood: 5 },
+  { day: 'Jue', mood: 2 },
+  { day: 'Vie', mood: 4 },
+  { day: 'Sáb', mood: 5 },
+  { day: 'Dom', mood: 4 },
+]
