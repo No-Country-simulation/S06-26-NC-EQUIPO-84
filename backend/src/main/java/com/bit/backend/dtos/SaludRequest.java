@@ -1,8 +1,10 @@
 package com.bit.backend.dtos;
 
+import java.util.Map;
+
 public record SaludRequest(
-        String usuarioId,
+        String usuario_id,
         String humor,
-        int notaSemanal,
-        String contexto
+        int nota_semanal,
+        Map<String, Object> contexto
 ) {}
