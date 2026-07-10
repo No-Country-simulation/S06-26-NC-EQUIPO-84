@@ -1,7 +1,9 @@
-package com.bit.backend.services.imp;
+package com.bit.backend.services.impl;
 
 import com.bit.backend.dtos.SaludRequest;
 import com.bit.backend.dtos.SaludResponse;
+import com.bit.backend.exception.ErrorCode;
+import com.bit.backend.exception.NegocioException;
 import com.bit.backend.model.MentalHealthRecord;
 import com.bit.backend.model.User;
 import com.bit.backend.repository.MentalHealthRepository;
@@ -26,7 +28,7 @@ public class SaludServiceImpl implements SaludService {
     public SaludResponse procesarCheckIn(SaludRequest request) {
         // 1. Buscar al usuario real por email
         User user = userRepository.findByEmail(request.usuario_id())
-                .orElseThrow(() -> new RuntimeException("Usuario no encontrado"));
+                .orElseThrow(() -> new NegocioException(ErrorCode.USUARIO_NO_ENCONTRADO));
 
         // 2. Definir valores para el prompt (usando los datos reales del objeto User)
         String humorUsuario = request.humor() != null ? request.humor() : "Normal";

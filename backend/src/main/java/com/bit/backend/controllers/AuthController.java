@@ -4,7 +4,7 @@ package com.bit.backend.controllers;
 import com.bit.backend.dtos.AuthResponse;
 import com.bit.backend.dtos.LoginRequest;
 import com.bit.backend.dtos.RegisterRequest;
-import com.bit.backend.services.imp.AuthServiceimpl;
+import com.bit.backend.services.impl.AuthServiceimpl;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

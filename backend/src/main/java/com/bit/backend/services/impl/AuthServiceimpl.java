@@ -1,10 +1,9 @@
-package com.bit.backend.services.imp;
+package com.bit.backend.services.impl;
 
 
 import com.bit.backend.dtos.AuthResponse;
 import com.bit.backend.dtos.LoginRequest;
 import com.bit.backend.dtos.RegisterRequest;
-import com.bit.backend.model.Role;
 import com.bit.backend.model.User;
 import com.bit.backend.repository.UserRepository;
 import com.bit.backend.services.AuthService;
